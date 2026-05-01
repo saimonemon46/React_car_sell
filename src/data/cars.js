@@ -5,7 +5,7 @@ export const cars = [
     model: "Camry",
     year: 2023,
     price: 25000,
-    image: "https://via.placeholder.com/400x250?text=Toyota+Camry",
+    image: "/assets/img/img1.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const cars = [
     model: "Civic",
     year: 2022,
     price: 22000,
-    image: "https://via.placeholder.com/400x250?text=Honda+Civic",
+    image: "/assets/img/img2.jpg",
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const cars = [
     model: "Mustang",
     year: 2024,
     price: 35000,
-    image: "https://via.placeholder.com/400x250?text=Ford+Mustang",
+    image: "/assets/img/img3.jpg",
   },
 ];
