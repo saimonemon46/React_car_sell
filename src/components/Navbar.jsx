@@ -1,37 +1,37 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold text-gray-800">
-        Car<span className="text-blue-600">Sell</span>
-      </Link>
-      <div className="flex items-center gap-6">
-        <Link
-          to="/"
-          className="text-gray-600 hover:text-blue-600 transition-colors"
-        >
-          Home
+    <nav className="bg-white shadow-md">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-blue-600">
+          AutoMarket
         </Link>
-        <Link
-          to="/cars"
-          className="text-gray-600 hover:text-blue-600 transition-colors"
-        >
-          Cars
-        </Link>
-        <Link
-          to="/dashboard"
-          className="text-gray-600 hover:text-blue-600 transition-colors"
-        >
-          Dashboard
-        </Link>
-        <Link
-          to="/login"
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Login
-        </Link>
+        <div className="space-x-6">
+          <Link to="/" className="text-gray-600 hover:text-blue-600">
+            Home
+          </Link>
+          <Link to="/cars" className="text-gray-600 hover:text-blue-600">
+            Cars
+          </Link>
+          <Link to="/dashboard" className="text-gray-600 hover:text-blue-600">
+            Dashboard
+          </Link>
+        </div>
+        <div className="space-x-4">
+          <Link to="/login" className="text-gray-600 hover:text-blue-600">
+            Login
+          </Link>
+          <Link
+            to="/register"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Register
+          </Link>
+        </div>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;

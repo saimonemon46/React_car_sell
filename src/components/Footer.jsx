@@ -1,7 +1,13 @@
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white text-center p-4 mt-8">
-      <p>&copy; 2026 CarSell. All rights reserved.</p>
+    <footer className="bg-gray-800 text-white py-6 mt-auto">
+      <div className="container mx-auto px-4 text-center">
+        <p>
+          &copy; {new Date().getFullYear()} AutoMarket. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
-}
+};
+
+export default Footer;
